@@ -1,0 +1,14 @@
+{
+  "clientes": [
+    {
+      "values": {
+        "nombre": "Lucas Agustin",
+        "empresa": "GateIo",
+        "email": "wolfutn@gmail.com",
+        "tel": "33333333",
+        "notas": ""
+      },
+      "id": 2
+    }
+  ]
+}
