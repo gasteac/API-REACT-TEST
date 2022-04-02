@@ -36,7 +36,7 @@ const Formulario = ({children, client, cargando}) => {
       let respuesta
       if (client.id){
         // Aca por si editamos
-        const url = `http://localhost:4001/clientes/${id}`
+        const url = `https://my-json-server.typicode.com/gasteac/API-REACT-TEST/clientes/${id}/`
         respuesta = await fetch(url, {
         method: 'PUT', 
         body: JSON.stringify(values),
@@ -47,7 +47,7 @@ const Formulario = ({children, client, cargando}) => {
       {alert('Cliente editado correctamente')}
       } else {
           // Aca por si agregamos un cliente nuevo
-          const url = 'http://localhost:4001/clientes/'
+          const url = `https://my-json-server.typicode.com/gasteac/API-REACT-TEST/clientes`
           respuesta = await fetch(url, {
           method: 'POST', 
           body: JSON.stringify(values),

@@ -13,7 +13,7 @@ const EditarCliente = () => {
     setCargando(!cargando)
     const obtenerClienteAPI = async () => {
       try {
-        const respuesta = await fetch(`http://localhost:4001/clientes/${id}/`);
+        const respuesta = await fetch(`https://my-json-server.typicode.com/gasteac/API-REACT-TEST/clientes/${id}/`);
 
         const resultado = await respuesta.json();
 

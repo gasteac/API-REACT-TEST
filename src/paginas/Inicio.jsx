@@ -6,7 +6,7 @@ const Inicio = () => {
   useEffect(() => {
     const obtenerClientesApi = async ()=> {
       try{
-        const url = 'http://localhost:4001/clientes'
+        const url = `https://my-json-server.typicode.com/gasteac/API-REACT-TEST/clientes`
         const respuesta = await fetch(url)
         const resultado = await respuesta.json()
         setClientes(resultado)
@@ -22,7 +22,7 @@ const Inicio = () => {
     const confirmar = confirm('Deseas eliminar este cliente?')
     if(confirmar){
       try {
-        const url = `http://localhost:4001/clientes/${id}`
+        const url = `https://my-json-server.typicode.com/gasteac/API-REACT-TEST/clientes/${id}/`
         const respuesta = await fetch (url, {
           method:'DELETE'
         })
